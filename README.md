@@ -30,7 +30,7 @@ This template was created by Tendenci.com
 * [YouTube](https://youtube.com/tendencicms)
 * [Github](https://github.com/tendenci)
 
-![Tendenci](media/img/tendencilogoteal.png "Tendenci Logo!" | width=200)
+![Tendenci](media/img/tendencilogoteal.png "Tendenci Logo!" width="200")
 
 ## Bugs and Issues
 Having an issue with this template?  Please submit here on Github or leave a comment.
