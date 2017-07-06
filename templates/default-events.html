@@ -53,8 +53,9 @@
       
       <div class="{% block content_classes %}content col-xs-12 col-sm-12 col-md-12{% endblock %}">
         
-        <div class="event-search-heading">
-          <a href="/events/month/">See Calendar View</a>
+        <div class="text-center">
+          <a class="btn btn-pop" href="/events/month/">See Calendar View</a> &nbsp; &nbsp;
+          <a class="btn btn-pop" href="/events/search/past/">Past Events</a>
         </div>
         
         {% block content_messages %}
@@ -76,3 +77,4 @@
   {% endblock %}
 </footer>
 {% endblock %}
+
