@@ -1,6 +1,8 @@
 # azalea-theme
 This repository includes the necessary html templates and css that were used in the Azalea Theme.
 
+![Azalea](media/img/azalea-home-3.png "The Azalea Theme is responsive.")
+
 ## Getting Started
 If your running Tendenci on your own local machine, feel free to clone or fork the repo.
 To make changes from Tendenci's browser-based Theme Editor, you can copy and paste templates.  Please note that css changes currently on your site may affect the css in this template.
