@@ -17,6 +17,11 @@ The custom.css file contains the styling information for this theme.  Be sure to
 ## Boxes Content
 The Azalea theme does utilize a few boxes to provide editable content particularly in the header and footer.  Check out the Boxes folder for this content to get you started!
 
+* Box 01 - Header Logo
+* Box 02 - Homepage About Us Text (Right)
+* Box 03 - Homepage About Us Image (Left)
+* Box 04 - Footer
+
 ## Creator
 This template was created by Tendenci.com
 
@@ -24,6 +29,8 @@ This template was created by Tendenci.com
 * [Facebook](https://facebook.com/tendenci)
 * [YouTube](https://youtube.com/tendencicms)
 * [Github](https://github.com/tendenci)
+
+![Tendenci](media/img/tendencilogoteal.png "Tendenci Logo!" | width=200)
 
 ## Bugs and Issues
 Having an issue with this template?  Please submit here on Github or leave a comment.
