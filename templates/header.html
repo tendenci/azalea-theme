@@ -1,0 +1,58 @@
+{% load i18n %}
+{% load base_tags %}
+{% load nav_tags %}
+{% load box_tags %}
+{% load theme_tags %}
+
+<!-- SIDE NAV -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  {% nav 2 %}
+  {% nav 1 %}
+</div>
+
+
+<div class="sidebar-responsive">
+<!-- Element used to open the Sidenav -->
+<span onclick="openNav()" class="fa fa-bars"> MENU</span>  
+<div class="navbar-header pull-right">
+   {% box 1 %}
+</div>
+</div>
+
+
+<!-- MAIN NAV -->
+
+<div class="wrapper-nav navbar-responsive-collapse">
+<nav id="t-navbar" class="navbar">
+    <div class="container">  
+      
+      <div class="navbar-header col-md-3 col-sm-4">
+        <div>{% box 1 %}</div>
+      </div>
+      
+      <div class="t-utility-nav pull-right t-collapse">
+        <div class="t-utility-navbar">{% nav 2 %}</div>
+      </div>
+
+      <div id="t-main-navbar-collapse" class="navbar-right t-collapse">
+        <div>{% nav 1 %}</div>
+      </div>
+      
+  </div>
+  </nav>
+</div>
+
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
