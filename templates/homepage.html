@@ -1,0 +1,404 @@
+
+<!-- WELCOME TO THE AZALEA THEME
+
+ █████╗ ███████╗ █████╗ ██╗     ███████╗ █████╗ 
+██╔══██╗╚══███╔╝██╔══██╗██║     ██╔════╝██╔══██╗
+███████║  ███╔╝ ███████║██║     █████╗  ███████║
+██╔══██║ ███╔╝  ██╔══██║██║     ██╔══╝  ██╔══██║
+██║  ██║███████╗██║  ██║███████╗███████╗██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
+                                              
+   Attribution:
+   Copyright 2013-2015 Iron Summit Media Strategies, LLC                                 
+   Licensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0                                 
+   Unless required by applicable law or agreed to in writing, software                                   
+   distributed under the License is distributed on an "AS IS" BASIS,                                   
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.                                   
+   See the License for the specific language governing permissions andlimitations under the License.
+   Alterations to this template have been made by Tendenci for use on the Tendenci Software.
+   
+-->
+
+<!-- Tendenci Specific Load Tags (Delete as Needed)
+   =========================================================== -->
+{% load i18n %}
+{% load base_filters %}
+{% load base_tags %}
+{% load theme_tags %}
+{% load story_tags %}
+{% load forms_tags %} 
+{% load box_tags %}
+{% load news_tags %}
+{% load article_tags %}
+{% load photo_tags %}
+{% load event_tags %}
+{% load event_filters %}
+{% load video_tags %} 
+{% load video_filters %}
+{% theme_extends "base.html" %}
+<!-- Meta Tags (for optimal SEO)
+   =========================================================== -->
+{% block title %}{{ block.super }} | {{ SITE_GLOBAL_SITEPRIMARYKEYWORDS }}{% endblock %}
+{% block meta_description %}{{ block.super }}{% endblock %}
+{% block meta_keywords %}{{ block.super }}, {{ SITE_GLOBAL_SITESECONDARYKEYWORDS }}{% endblock %}
+<!-- Starts Tendenci Head Tag
+   =========================================================== -->
+{% block extra_head %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Custom styles for this template
+   =========================================================== -->
+<link rel="stylesheet" href="{{ THEME_URL }}media/css/animate.min.css" type="text/css">
+<link rel="stylesheet" href="{{ THEME_URL }}media/css/creative.css" type="text/css">
+<link rel="stylesheet" href="{{ THEME_URL }}media/css/custom.css" type="text/css">
+
+{% endblock extra_head %}
+<!-- Start of the Body
+   =========================================================== -->
+{% block body_ids %}home{% endblock body_ids %}
+{% block body_classes %}home{% endblock body_classes %}
+{% block html_body %}
+<!-- begin: header -->
+{% theme_include "header.html" %}<!-- Pulls in Header Include -->
+<!-- end: header -->
+
+<!--begin: image background -->
+<main>
+<section id="homepage-image">
+   <div class="col-12">
+           
+     <div class="homepage-image-text">
+       <div class="col-12 text-center">
+         <div class="row vertical-align">
+           <h1>A New Theme.</h1>
+           <span><h3><a class="btn btn-light btn-lg" href="/about/">Try it Now</a></h3></span>
+         </div>
+       </div>
+     </div>
+     
+   </div>
+</section>
+
+<!-- end : image background -->
+  
+  <!-- begin: events-block -->
+  
+  <!-- begin: events-innerblock -->
+  <section id="homepage-events">
+   <div class="container">
+    <div class="row">
+ 
+    <div class ="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="homepage-events-block">
+      
+      <h3 class="header-block text-center">Upcoming Events</h3>
+      {% list_events as events_list limit=3 %}
+      
+        {% if events_list %}
+          {% for event in events_list %}
+        
+          <a href="{{ event.get_absolute_url }}">
+            <div class="single-event col-md-4">
+              <div class="event-info">
+                <div class=" ">
+                  
+                  {% if event.image %}            
+                  <img alt="{{ event.title }}" src="{% image_url event.image size=310x154 crop=true %}"/>
+                  {% else %}
+                  <img src="/photos/13/640x427/"/>
+                  {% endif %} 
+                  
+                  <div class="event-date-time">
+                    <p class="event-date">{{ event.start_dt|date:"D, M d  P" }}</p>
+                  </div>
+                </div>
+                <div class=" ">
+                  <h3><a href="{{ event.get_absolute_url }}">{{ event.title }}</a></h3>    
+                  
+                </div>
+              </div>
+            </div> 
+      </a>
+        {% endfor %}
+      
+      {% else %}
+        <div class="event-info-alt">
+          <h4>Add an Event Today to See Something Here</h4>
+        </div>
+      {% endif %}
+          
+      </div>
+   
+    
+    <!-- end: events-innerblock -->
+    
+    <div class="view-more-events col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <a class="btn btn-primary" href="/events/">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- end: events-block -->
+     </div>
+    </div> 
+  </section>
+  <!-- end: homepage-events -->
+     
+     
+    
+
+<!-- begin: home-about-us --> 
+   <section id="about-us">
+     <div class="container">
+       
+       <div class="row">
+            <div class="line-decoration col-md-2 col-md-offset-5 text-center"></div>
+       </div>
+     
+     <div class="container">
+       <div class="row">
+       <span><h1 class="about text-center"><a href="/about/">About Azalea</a></h1></span>
+       
+       <div class="col-md-6"> {% box 3 %}</div>
+       <div class="col-md-6"> {% box 2 %}</div>
+       
+       </div>
+     </div>
+       
+    <!-- begin: learn-more-about -->
+    
+    <div class="learn-more-about">
+      <div class="container">
+        <div class="row text-center">
+            <a class="btn btn-light" href="/about/">Learn More</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- end: learn-more-about -->
+       
+       </div>
+   </section>
+<!-- end: home-about-us -->
+
+
+<!--begin: image background newsletter -->
+
+<section id="homepage-newletter-image">
+   <div class="col-12">
+           
+     <div class="homepage-newsletter-text">
+       <div class="col-12 text-center">
+         <div class="row vertical-align">
+           <h3>Subscribe to our Weekly Newsletter</h3>
+          
+           
+           <div>{% embed_form 3 %}</div>
+           
+           
+         </div>
+       </div>
+     </div>
+     
+   </div>
+</section>
+
+<!-- end : image background newsletter -->
+
+
+
+
+  <!-- begin: home-newsarticlescontent-row -->
+   <aside class="bg-dark">
+      <div class="container text-center">
+        
+        <h3>Recent Updates</h3>
+        
+         <div class="col-md-4 bg-dark-inner">
+           
+           
+           <!-- begin: news-block -->  
+           <!-- begin: news-innerblock -->
+           <div class="news-innerblock">
+             {% list_news as news_list limit=1 %}
+             <ul class="list-unstyled">
+               {% for news_item in news_list %}
+               <li>
+                 <div class="">
+                   <!-- news-image -->    
+                   {% if news_item.thumbnail %}
+                   <a href="{{ news_item.get_absolute_url }}">
+                     <div class="news-item-thumbnail">
+                       <img class="img" src="{% image_url news_item.thumbnail size=200x150 crop=True %}" 
+                       alt="{{ news_item.headline|striptags|safe }}"  
+                       />
+                     </div> 
+                   </a>
+                   {% else %}
+                   <a href="{{ news_item.get_absolute_url }}">
+                     <div class="news-item-thumbnail-auto">
+                       <img src="/photos/13/640x427/"  
+                       style="width:200px;height:150px;overflow=hidden;"
+                       alt="image of a woman"/>
+                     </div> 
+                   </a>
+                   {% endif %}                     
+                   <!-- end news-image -->   
+                   
+                    <h4>News</h4>
+                   
+                   <a href="{{ news_item.get_absolute_url }}">
+                     <h3>{% blocktrans with h=news_item.headline %}
+                       {{ h }}
+                       {% endblocktrans %}
+                     </h3> 
+                   </a>
+                  
+                   <p>
+                     {% blocktrans with c=news_item.summary|striptags|safe|truncatewords:"30" %}
+                     {{ c }}
+                     {% endblocktrans %}
+                   </p>
+                 </div>
+               </li>
+               {% endfor %}
+             </ul>
+           </div>
+           
+           
+           <!--end: news-innerblock-->              
+           <!-- end: news-block -->           
+        </div>
+        
+        <!-- middle section-->
+         <div class="col-md-4 bg-dark-inner">
+
+           
+           
+           <!-- begin: news-block -->             <!-- begin: news-innerblock -->
+           <div class="articles-innerblock">
+             {% list_articles as articles_list limit=1 %}
+             <ul class="list-unstyled">
+               {% for article in articles_list %}
+               <li>
+                 <div class="">
+                   <!-- news-image -->    
+                   {% if article.thumbnail %}
+                   <a href="{{ article.get_absolute_url }}">
+                     <div class="article-thumbnail">
+                       <img class="img" src="{% image_url article.thumbnail size=200x150 crop=True %}" 
+                       alt="{{ article.headline|striptags|safe }}"  
+                       />
+                     </div> 
+                   </a>
+                   {% else %}
+                   <a href="{{ article.get_absolute_url }}">
+                     <div class="article-thumbnail-auto">
+                       <img src="/photos/13/640x427/"  
+                       style="width:200px;height:150px;overflow=hidden;size=cover;"
+                       alt="image of a woman"/>
+                     </div> 
+                   </a>
+                   {% endif %}                     
+                   <!-- end news-image -->   
+                   
+                   <h4>Articles</h4>
+                   
+                   <a href="{{ article.get_absolute_url }}">
+                     <h3>{% blocktrans with h=article.headline %}
+                       {{ h }}
+                       {% endblocktrans %}
+                     </h3> 
+                   </a>
+                   
+                   <p>
+                     {% blocktrans with c=article.summary|striptags|safe|truncatewords:"30" %}
+                     {{ c }}
+                     {% endblocktrans %}
+                   </p>
+                 </div>
+               </li>
+               {% endfor %}
+             </ul>
+             
+           </div>           
+
+         </div>
+        
+        
+        
+        <!-- right column-->
+        <div class="col-md-4 bg-dark-inner" id="bg-dark-inner-3">
+          
+          {% list_photos as photos_list limit=1 %}
+          {% for photo in photos_list %}
+          
+          
+          <a href="{{ photo.get_absolute_url }}">
+            <img alt="{{ photo.title }}" src="{% photo_image_url photo size=200x150 crop=True %}" />
+          </a>
+          
+          <h4>Media</h4>
+          
+          <a href="{{ photo.get_absolute_url }}">
+            <h3>{% blocktrans with h=photo.title %}
+              {{ h }}
+              {% endblocktrans %}
+            </h3> </a>
+          
+          <p>Check out the latest photos from Azalea!</p>
+          
+          {% endfor %}
+        </div>
+        
+         <!--/col-md-4-->
+      </div>
+   </aside>
+
+<!-- end: home-newsarticles-content-row -->
+  
+   <!-- jQuery -->
+  <script src="{{ THEME_URL }}media/js/jquery.easing.min.js"></script>
+      <script src="{{ THEME_URL }}media/js/jquery.fittext.js"></script>
+   <script src="{{ THEME_URL }}media/js/wow.min.js"></script> 
+   <!-- Custom Theme JavaScript -->
+   <!-- <script src="{{ THEME_URL }}media/js/creative.js"></script> -->
+   <!-- Footer starts
+      =========================================================== -->
+   <footer>
+      {% theme_include 'footer.html' %}
+   </footer>
+   <!-- Footer Ends -->
+</main>
+{% endblock %} <!-- Ends the Body -->
+{% block extra_body %}
+{{ super.block }}
+<!-- Bootstrap core JavaScript
+   ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- Plugins -->
+<script>
+   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+   p=/^http:/.test(d.location)?'http':'https';
+   if(!d.getElementById(id)){
+   js=d.createElement(s);
+   js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+   fjs.parentNode.insertBefore(js,fjs);}}
+   (document,"script","twitter-wjs");
+</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+   //code below helps remove extra .item that is added. 
+   //#rotator_inner helps target which carousel
+     $('#rotator_inner > .item:last').remove();
+     });
+</script>
+{% endblock extra_body %}
