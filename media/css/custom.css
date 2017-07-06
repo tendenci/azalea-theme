@@ -88,8 +88,7 @@ hr.wide {
 /* ====================================================================
 ======================================================================= HEADER IMAGES */
 
-.default-header-section,
-.membership-header-image {
+.default-header-section {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
@@ -98,6 +97,7 @@ hr.wide {
   margin-top: -150px;
   z-index: -1000;
 }
+
 .events-header-section {
   height: 550px;
   background: 
@@ -107,15 +107,7 @@ hr.wide {
   margin-top: -150px;
   z-index: -1000;
 }
-.events-month-header-section {
-  height: 550px;
-  background: 
-    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('./media/img/azalea-events.png');
-  background-size: cover;
-  margin-top: -150px;
-  z-index: -1000;
-}
+
 .default-memberships-header {
   height: 550px;
   background: 
@@ -135,6 +127,7 @@ hr.wide {
   margin-top: -150px;
   z-index: -1000;
 }
+
 #homepage-image {
   background:
     linear-gradient(to left, rgba(237,104,60,.9), rgba(0,0,0,.9)),
