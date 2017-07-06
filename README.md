@@ -33,7 +33,7 @@ This template was created by Tendenci.com
 ![Tendenci](media/img/tendencilogoteal.png "Tendenci Logo")
 
 ## Bugs and Issues
-Having an issue with this template?  Please submit here on ![Tendenci's Github](https://github.com/tendenci/tendenci/issues).
+Having an issue with this template?  Please submit here on [Tendenci's Github](https://github.com/tendenci/tendenci/issues).
 
 ## Copyright and License
 Copyright Tendenci — The Open Source AMS, 2017 under the GPU license.
