@@ -1,16 +1,35 @@
 /* CSS custom 
 *
 * Table of contents:
-** Utility Navigation
-** Main Navigation
-** Rotator
-** Photo Gallery Homepage
-** Sponsors
+** Buttons
+** Headers
+
+** Login
+** Utility Nav
+** Main Nav
+** Admin Links
+** Side Nav
+** Tendenci Nav
+
+** Homepage Hero
+** Homepage Events
+** Homepage About
+** Homepage Newsletter
+
+** Events Search
+** Events Month
+** About
+** News Search
+** News View
+** Articles Search
+** Articles View
+** Membership Benefits
+** Jobs Search
 ** Footer
-** Sidebar
-** Twitter
+
 ** Tendenci Override
 ** Media Queries
+*
 */
 
 
@@ -819,6 +838,15 @@ h1#news-search-bar {
 }
 
 /* ====================================================================
+======================================================================= NEWS VIEW */
+.t-news-news .page-header {
+  margin-top: -250px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+}
+
+/* ====================================================================
 ======================================================================= ARTICLES SEARCH */
 h1.articles-search-heading {
   text-align: center;
@@ -854,45 +882,6 @@ article {
   margin-left: 15px;
   font-size: 16px;
 }
-
-
-/* ====================================================================
-======================================================================= NEWS VIEW */
-.t-news-news .page-header {
-  margin-top: -250px;
-  padding-bottom: 200px;
-  text-align: center;
-  color: white;
-}
-
-/* ====================================================================
-======================================================================= FOOTER */
-footer {
-  margin-top: 0;
-  background-color: #404041;
-  padding: 35px 0 0;
-}
-footer p, footer a, footer li {
-  color: #FEF4EA;
-  font-weight:200;
-  font-size: 13px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-footer strong {
-  text-transform: uppercase;
-  color: #E96F5C;
-  font-weight:300;
-}
-footer .fa:hover {
-  color: #E96F5C;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  transition-timing-function: ease-out; 
-}
-
 
 /* ====================================================================
 ======================================================================= MEMBERSHIP BENEFITS */
@@ -984,6 +973,33 @@ form#t-jobs-search-form {
 }
 .t-jobs-job-regular h1 .glyphicon {display: none;}
 
+/* ====================================================================
+======================================================================= FOOTER */
+footer {
+  margin-top: 0;
+  background-color: #404041;
+  padding: 35px 0 0;
+}
+footer p, footer a, footer li {
+  color: #FEF4EA;
+  font-weight:200;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+footer strong {
+  text-transform: uppercase;
+  color: #E96F5C;
+  font-weight:300;
+}
+footer .fa:hover {
+  color: #E96F5C;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
 
 /* ====================================================================
 ======================================================================= MEDIA QUERIES */
