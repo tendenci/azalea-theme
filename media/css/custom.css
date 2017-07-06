@@ -1,0 +1,1083 @@
+/* CSS custom 
+*
+* Table of contents:
+** Utility Navigation
+** Main Navigation
+** Rotator
+** Photo Gallery Homepage
+** Sponsors
+** Footer
+** Sidebar
+** Twitter
+** Tendenci Override
+** Media Queries
+*/
+
+
+h1 {
+  font-size: 50px;
+  font-weight:400;
+}
+h3 {
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+h4 {
+  font-weight: 400;
+  padding-bottom: 10px;  
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration:none;
+  color: #e96f5c;
+}
+
+.t-perm-public {
+  color: #404041;
+}
+.t-status-active {
+  color: #404041;
+}
+.page-header h1 {
+  text-transform: capitalize;
+}
+.t h1 {
+  margin: 30px 0;
+}
+
+hr.wide {
+  max-width: 100%;
+}
+
+/* ====================================================================
+======================================================================= BUTTONS */
+.btn.btn-pop {
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #e96f5c;
+  margin-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  margin-top: 30px;
+  font-weight: normal;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn.btn-pop:hover {
+  color: #585858;
+  border-bottom: 1px solid #585858;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* ====================================================================
+======================================================================= LOGIN */
+.accounts-login {
+  text-align: center;
+}
+form#t-accounts-login-form {
+  margin-left: 25%;
+  width: 100%;
+}
+.form-group.accounts-login {
+  margin-left: 0;
+  width: 50%;
+}
+
+/* ====================================================================
+======================================================================= UTILITY NAV */
+.t-utility-nav a.fa.fa-search.fa-lg {
+  border-right:none;
+}
+.t-utility-nav ul>li>a:last-of-type {
+  
+}
+.t-utility-nav ul li a {
+  color: #ed683c;
+  border-right: 1px solid #ed683c;
+  text-transform:uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-top: 50px;
+  z-index:1000;
+}
+
+
+/* ====================================================================
+======================================================================= MAIN NAV */
+/*navbar*/
+#t-navbar {
+  margin: 0;
+}
+/* #sub #t-navbar targets interior pages only */
+#sub #t-navbar {
+  /*border-bottom: 2px solid #ed683c;*/
+  border-radius: 0;
+  border: 0;
+}
+#sub .dropdown-menu {
+  background-color:white;
+}
+#sub .sidebar {
+  margin-left: -35px;
+  padding-left: 20px;
+  width: 25%;
+  background-color: transparent;
+  border:none;
+  border-right: 1px solid #e6e7e8;
+  min-height:500px;
+}
+#sub .form-group {
+  margin-left:0;
+}
+#sub form.search-form {    
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.panel-title {
+  padding-bottom: 20px;
+}
+
+/* ====================================================================
+======================================================================= ADMIN LINKS */
+#home .admin-links.clear-block {
+  width: auto;
+}
+
+/* ====================================================================
+======================================================================= SIDE NAV RESPONSIVE */
+/* hidden until wide enough */
+.sidebar-responsive,
+.sidenav {
+  display: none;
+}
+.sidebar-responsive {
+  background: rgba(255,255,255,.5);
+  height: 65px;
+  padding: 10px 20px;
+}
+.sidebar-responsive .navbar-header {
+  width: 100px;
+  margin-bottom: -15px;
+}
+.sidebar-responsive .navbar-header-sec {
+  width:100px;
+}
+
+.sidebar-responsive .fa {
+  font-size: 22px;
+  font-family: FontAwesome, 'Nunito Sans', sans-serif;
+  padding-top: 10px;
+  font-weight: 800;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #595b5d; /* dark gray*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 60px 0; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 2px 0 3px rgba(0,0,0,.25);
+}
+#mySidenav #t-main-navbar-nav-1 {
+  float: none;
+  padding-right: 0;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 22px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s
+}
+.sidenav .navbar-nav>li>a {
+  padding-left: 30px;
+  white-space: nowrap;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav li {
+  clear: left;
+  width: 100%;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav 
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {
+  padding-top: 15px;
+}
+.sidenav a {
+  font-size: 18px;
+}
+}
+@media (max-width: 992px) {
+.navbar-responsive-collapse {
+  display: none;
+}
+.sidebar-responsive,
+.sidenav {
+  display: block;
+}
+.navbar-header.pull-right {
+  margin-top: -67px;
+}
+}
+/* END RESPONSIVE NAV */
+
+
+
+/*sidebar tabs 
+----------------*/
+
+/* Style the list */
+.sidebar ul.tab {
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #e6e7e8;
+  margin-left: -22px;
+  margin-right: -15px;
+}
+
+/* Float the list items side by side */
+.sidebar ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+.sidebar ul.tab li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #e96f5c;
+  margin-left: 10px;
+  padding: 5px;
+  background-color: white;
+  
+}
+.sidebar .tabcontent {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+to {opacity: 1;}
+}
+
+/* Change background color of links on hover */
+.sidebar ul.tab li a:hover {
+  color: #404041;
+  border:1px solid #404041;
+  background-color: #e6e7e8;
+}
+
+/* Create an active/current tablink class */
+.sidebar ul.tab li a:focus, 
+.sidebar .active, 
+.sidebar a:active,
+.sidebar #defaultOpen.active {
+  color: #e6e7e8;
+  border: 1px solid #404041 !important;
+  background-color: #404041;
+}
+
+/* Style the tab content */
+.sidebar .tabcontent {
+  display: none;
+  border-top: none;
+}
+.sidebar ul.tab li .fa {
+  border: none;
+  background-color: transparent;
+  padding-top:10px;
+  float:right;
+}
+.sidebar ul.tab li .fa:hover,
+.sidebar ul.tab li .fa:active,
+.sidebar ul.tab li .fa:focus {
+  border: none;
+  background-color: transparent;
+  color: #404041;
+}
+
+.sidebar p {
+  text-transform: capitalize;
+}
+
+
+
+/* ====================================================================
+======================================================================= TENDENCI NAV */
+#t-main-navbar-collapse {
+  position: relative;
+}
+#t-main-navbar-collapse .t-main-navbar-nav {
+  margin-top: 20px;
+}
+#t-main-navbar-collapse .navbar-nav{
+  margin: 10px 0 0;
+}
+#t-main-navbar-collapse .navbar-header > a {
+  display:block;
+}
+#t-main-navbar-collapse .navbar-brand {
+  height: inherit;
+  font-size: 18px;
+}
+#t-main-navbar-brand h3{
+  height: inherit;
+  font-size: 18px;
+  margin-top: 10px;
+}
+/*added-----------*/
+#t-navbar {
+  background-color: rgba(255,255,255,.5);
+  border-radius: 0;
+}
+#t-main-navbar-nav-1 {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#t-main-navbar-collapse .navbar-nav>li>a {
+  font-size: 22px;
+  color: #585858;
+  padding-right: 0px;
+  padding-left: 45px;
+}
+#box-1 {
+  margin-top: 70px;
+}
+.nav .open>a, 
+.nav .open>a:hover, 
+.nav .open>a:focus,
+.nav .open>a:active,
+.nav>li>a:hover, 
+.nav>li>a:focus {
+  background-color: rgba(255,255,255,0);
+  opacity:.5;
+}
+.navbar-nav>li>.dropdown-menu {
+  margin-top: 14px;
+  background: rgba(255,255,255,.5);
+  border: none;
+  margin-right: -20px;
+}
+.dropdown-menu>li>a {
+  color: #404041;
+  text-align: right;
+  font-size: 18px;
+}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:active,
+.dropdown-menu>li>a:focus {
+  color: #e96f5c;
+  background:none;
+}
+
+/* ====================================================================
+======================================================================= HOMEPAGE HERO */
+#homepage-image {
+  background:
+    linear-gradient(to left, rgba(237,104,60,.9), rgba(0,0,0,.9)),
+    url('/photos/13/640x427/');
+  height:650px;
+  background-blend-mode: screen, screen;
+  width:100%;
+  background-size: cover;
+  margin-top: -170px;
+}
+.homepage-image-text {
+  padding-top: 250px;
+  color: white;
+}
+.homepage-image-text a{
+  color:white;
+  border-bottom: 1px white solid;
+  padding-bottom: 5px;
+  margin-top:20px;
+}
+.homepage-image-text h3 {
+  padding-top: 20px;
+}
+
+/* ====================================================================
+======================================================================= EVENTS */
+section#homepage-events {
+  background-color: #fef4ea;
+}
+.event-info:hover {
+  opacity: .8;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
+.single-event {
+  padding:10px;
+}
+.event-info {
+  background-color:white;
+  border: 1px #e6e7e8 solid;
+}
+.event-info img {
+  width:100%;
+  border: 1px #e6e7e8 solid;
+}
+.event-info p {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #404041;
+  margin:0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+.event-info h3>a {
+  font-size: 18px;
+  color: #404041;  
+  font-weight:600;
+}
+.event-info h3 {
+  padding: 0 10px 20px 10px;
+  margin:0;
+}
+.view-more-events h4>a {
+  color: #404041;
+  border-bottom: 1px solid #404041;
+  padding-bottom: 5px;
+}
+.view-more-events {
+  padding:30px 0 20px 0;
+}
+
+.homepage-image-text a:hover,
+#homepage-events .view-more-events a:hover,
+.learn-more-about h4>a:hover {
+  color: #e96f5c;
+  border-bottom: 1px #e96f5c solid;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
+
+
+/* ====================================================================
+======================================================================= EVENTS LIST / SEARCH */
+.t.search-view h1 {
+  margin-top: -330px;
+  padding-bottom: 280px;
+  text-align: center;
+  color: white;
+}
+.search-view .event-wrap {
+  width: 70%;
+  margin-left: 15%;
+}
+.event-search-heading {
+  text-align:center;
+  padding-top: 30px;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.event-search-heading a {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.month-names {
+  margin-bottom: 200px !important;
+  margin-top: -340px;
+  background-color: transparent;
+  font-size: 20px;
+}
+#page-top .month-names .month-name {
+  float: none;
+  text-align: center;
+}
+#page-top .month-names .month-name a {
+  display: inline;
+}
+.month-names .current a,
+.month-names .previous a,
+.month-names .next a {
+  background:transparent !important;
+  color:white;
+  font-size: 50px !important;
+}
+.month-names .current a:hover,
+.month-names .previous a:hover,
+.month-names .next a:hover {
+  color:#e96f5c;
+}
+
+/* ====================================================================
+======================================================================= EVENTS MONTH */
+.t.search-view .event-tabs, 
+.t.search-view .search-form, 
+.t.search-view .highlight, 
+.t.search-view .t-search-result-footer {
+  display:none;
+}
+.month-view .month-wrap {
+  width:80% !important;
+  margin-left:10%;
+}
+.month-view div.month-grid {
+  margin-bottom:50px;
+}
+.month-view div.day {
+  width: 14.25% !important;
+  height: 130px !important;
+  border: 3px solid white !important;
+  background-color: #e6e7e8 !important;
+}
+.month-view div.month-grid {
+  border-left:none !important;
+}
+.month-view div.day div.date-numeral {
+  background-color: transparent !important;
+}
+.month-view div.day div.date-numeral a {
+  padding-right: 10px !important;
+  padding-top: 10px;
+}
+.month-view div.weekday, .month-view div.weekday-mobile {
+  border-bottom:none!important;
+}
+/* SINGLE EVENT DETAILS */
+.vitals {
+  background: #E6E7E8;
+  padding: 10px;
+}
+
+/* ====================================================================
+======================================================================= HOMEPAGE ABOUT */
+section#about-us {
+  background-color: #404041;
+  padding-top: 80px;
+}
+#about-us h1>a{
+  color:white;
+}
+.line-decoration {
+  border-top: 1px solid #e96f5c;
+}
+#about-us h1 {
+  padding-top: 20px;
+}
+#about-us p {
+  color:white;
+}
+#box-2 {
+  padding-top:50px;
+}
+.learn-more-about h4 {
+  text-align: center;
+}
+.learn-more-about h4>a {
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 1px white solid;
+}
+
+/* ====================================================================
+======================================================================= ABOUT */
+.page-header{
+  margin-top: -250px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+}
+.about-us-header {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url(/media/files/files/3640809e/about-us.png);
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+
+/* ====================================================================
+======================================================================= HOMEPAGE NEWSLETTER */
+#homepage-newletter-image {
+  background:
+    linear-gradient(to left, rgba(237,104,60,1), rgba(0,0,0,1)),
+    url('/photos/11/640x446/');
+  /*  height:550px; */
+  background-blend-mode: screen, screen;
+  width:100%;
+  background-size: cover;
+}
+.homepage-newsletter-text {
+  background-color: rgba(255,255,255,.5);
+  width: 70%;
+  margin-left: 15%;
+  /*  height: 400px; 
+  margin-top: 40px; */
+  padding: 20px;
+}
+/* NEWS + ARTICLES FEED */
+.bg-dark {
+  color: #404041;
+  background-color: #FEF4EA;
+}
+.bg-dark-inner {
+  padding: 0 50px;
+  border-right: 1px solid #404041;
+  margin-bottom: 30px;
+}
+.bg-dark-inner h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #E96F5C;
+  font-weight: 600;
+}
+.bg-dark-inner h3 {
+  text-transform: capitalize;
+  color: #404041;
+  font-size: 22px;
+  font-weight: 300;
+  min-height: 75px;
+  padding: 0;
+  margin: 0;
+}
+#bg-dark-inner-3 {
+  border-right:none;
+}
+#bg-dark-inner:hover {
+  opacity:.8;
+}
+
+/* ====================================================================
+======================================================================= NEWS SEARCH */
+
+.t-news-search-result .panel-title a,
+.t-articles-search-result .panel-title a,
+.t-jobs-search-result.t-jobs-job-regular .panel-title a {
+  font-size: 40px;
+  color: #e96f5c;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.t-news-search-result .panel-title a:hover,
+.t-articles-search-result .panel-title a:hover,
+.t-jobs-search-result.t-jobs-job-regular .panel-title a:hover{
+  color: #404041;
+}
+.panel-info>.panel-heading {
+  background-color:transparent;
+  border: 0;
+}
+.panel-info {
+  border: 0;
+}
+article.panel.panel-info.t-news-search-result.t-search-result .t-search-result-footer {
+  display:none;
+}
+.panel-body {
+  padding: 0 15px;
+  border-bottom: 1px dotted #404041;
+}
+.panel-body.t-search-result-body h1, 
+.panel-body.t-search-result-body h2, 
+.panel-body.t-search-result-body h3, 
+.panel-body.t-search-result-body h4 {
+  font-size: 18px;
+}
+article.panel.panel-info.t-news-search-result.t-search-result {
+  width:70%;
+  margin-left:15%;
+}
+.panel-body.t-search-result-body p {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #777777;
+}
+.t-search-view h4.capitalize {
+  display: none;
+}
+h4.news-search-read-more {
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+.news-search-read-more a {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.news-search-read-more a:hover {
+  color: #2b2b2b;
+}
+form.search-form.form-inline {
+  padding-top:200px;
+  text-align:center;
+}
+h1#news-search-bar {
+  margin-top: -240px;
+  text-align: center;
+  color: white;
+}
+
+.t-meta-data-top h3 {
+  margin-top: -30px;
+}
+
+/* ====================================================================
+======================================================================= ARTICLES SEARCH */
+h1.articles-search-heading {
+  text-align: center;
+  margin-top: -220px;
+  padding-bottom: 200px;
+  color: white;
+}
+form#t-articles-search-form {
+  text-align: center;
+}
+article.panel.panel-info.t-articles-search-result.t-search-result {
+  width: 70%;
+  margin-left: 15%;
+}
+.t-meta-data-top h3 {
+  margin-top:-30px;
+}
+
+/* ====================================================================
+======================================================================= ARTICLE VIEW */
+article {
+  width: 70%;
+  margin-left: 15%;
+}
+.t-articles-article .page-header h1 {
+  margin-top: -250px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+}
+.articles-heading-date h3 {
+  margin-top: -10px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+
+/* ====================================================================
+======================================================================= NEWS VIEW */
+.t-news-news .page-header {
+  margin-top: -250px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+}
+
+/*SPONSORS
+====================*/
+.sponsors-item img {
+  margin: 25px auto;
+  position: relative;
+  padding: 0 40px;
+  height: auto;
+}
+
+/* ====================================================================
+======================================================================= FOOTER */
+footer {
+  margin-top: 0;
+  background-color: #404041;
+  padding: 35px 0 0;
+}
+footer p, footer a, footer li {
+  color: #FEF4EA;
+  font-weight:200;
+  font-size: 13px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+footer strong {
+  text-transform: uppercase;
+  color: #E96F5C;
+  font-weight:300;
+}
+footer .fa:hover {
+  color: #E96F5C;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+}
+/*SIDEBAR
+====================*/
+.sidebar {
+  background-color: #F9F9F9;
+  border: 1px solid #eee;
+  margin-bottom: 60px;
+  float: right;
+}
+.sidebar .photo-gallery ul li {
+  margin: 0;
+  padding: 5px;
+}
+.sidebar img:hover {
+  -moz-transform: scale(1.1);  
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.body-wide .sidebar {
+  display: none;
+}
+
+
+/* GROUPS SEARCH
+==================*/
+.panel-primary>.panel-heading {
+  color: #fff;
+  background-color: #404041;
+  border-color: #404041;
+}
+
+/* ====================================================================
+======================================================================= MEMBERSHIP BENEFITS */
+
+.default-header-section,
+.membership-header-image {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url('/media/files/files/8e67ad2b/laptop2.jpeg');
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+.events-header-section {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url('/media/files/files/7bae04e2/gather.png');
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+.events-month-header-section {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url('/media/files/files/7bae04e2/gather.png');
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+
+.default-header-section h1 {
+  margin-top:150px;
+  text-align:center;
+}
+#t-pages-page-2 .t-pages-page-body {
+  line-height: 1.8em;
+}
+#t-pages-page-2 h2.panel-title::after {    
+  content: "\f105";
+  font-family: FontAwesome;
+  float: right;
+}
+#t-pages-page-2 ul.list-unstyled.t-meta-data {
+  display: none;
+}
+button.btn.btn-primary:focus {
+  outline:none;
+}
+form#t-corp-form,
+form#t-memberships-application-form {
+  background: #f0f0f0;
+  margin-bottom: 30px;
+  padding: 10px 50px;
+}
+.default-memberships-header {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url(/media/files/files/e42b26b9/together_group.jpeg);
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+/*HIDE AND SHOW MEMBERSHIPS 
+====================*/
+#t-pages-page-2 .panel-title {
+  padding: 0;
+  font-size: 24px;
+  color: #404041;
+  font-weight: 600;
+}
+#t-pages-page-2 .panel-body ul {
+  padding-top: 15px;
+}
+
+
+/*TWITTER
+=====================*/
+#home #twitter-widget-0 {height: 220px;}
+/*TENDENCI OVERRIDE
+=====================*/
+/*interior override*/
+.sub .t {width: 100%;}
+/*Tendenci EDIT/ADMIN link boxes*/
+.admin-links.clear-block {
+  background: rgba(0,0,0,0.8);
+  padding: 4px 8px;
+  position: absolute;
+  width: 260px;
+  clear: both;
+  z-index:1;
+}
+.admin-links.clear-block a {
+  color: #fff;
+}
+
+/*t-meta-editor override*/
+.t-meta-editor-bar {  
+  background-color: #eeffdd; 
+}
+.t-meta-data a.label {color: #eee;}
+.t-meta-editor-bar .t-meta-options-links > li a {
+  color: #0066cc;
+}
+.t-meta-editor-bar .t-meta-options-links > li a:hover {    
+  color: #002266;
+}
+/*JOBS - app/module*/
+#t-jobs-search-form > span.label, 
+#t-jobs-search-form > a.label{
+  color: #fff!important; 
+}
+.glyphicon-ok-sign {
+  color: #F05F40;
+}
+.t-jobs-job-regular h1 .glyphicon {display: none;}
+
+
+/* ====================================================================
+======================================================================= JOBS SEARCH */
+
+.jobs-search-header {
+  height: 550px;
+  background: 
+    linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
+    url('/media/files/files/218f8c2a/jobs.png');
+  background-size: cover;
+  margin-top: -150px;
+  z-index: -1000;
+}
+form#t-jobs-search-form {
+  text-align: center;
+}
+#jobs-search-title h1 {
+  text-align: center;
+  margin-top: -220px;
+  padding-bottom: 200px;
+  color: white;
+}
+
+
+
+/* ====================================================================
+======================================================================= MEDIA QUERIES */
+@media (max-width: 1199px){
+/*main navigation*/
+#t-main-navbar-collapse ul li a {
+  padding: 10px 8px;
+}
+/*rotator*/
+#myCarousel .carousel-caption {top: -8%; right: 20%; left: 20%;}
+#myCarousel .carousel-caption h2, #myCarousel .carousel-caption p {margin-bottom: 7px;}
+#myCarousel .carousel-caption .story-summary {font-size: 22px;}
+}
+@media (min-width: 991px){
+nav .collapse {display: block; visibility: visible;}
+}
+@media (max-width: 992px){
+#t-navbar .t-collapse {
+  display: none;
+}
+/*end: mobile main nav*/
+/*ROTATOR mobile*/
+#myCarousel .carousel-caption {
+  top: -16%;
+}
+#myCarousel .carousel-inner {height: auto;}
+#myCarousel .carousel-caption h2 a {font-size: 30px;}
+#myCarousel .carousel-caption .story-summary {
+  font-size: 20px;
+}
+#myCarousel .carousel-caption .btn {
+  font-size: 16px;
+}
+}
+@media (max-width: 860px){
+#myCarousel .carousel-caption {
+  top: 0;
+  right: 15%;
+  left: 15%;
+}
+#myCarousel .carousel-caption h2 { margin-top: 0; }
+#myCarousel .carousel-inner>.item>img, #myCarousel .carousel-inner>.item>a>img {
+  height: 100%;
+  width: auto;
+}
+}
+/* Landscape */ 
+@media only screen  and (min-device-width : 768px)  and (max-device-width : 1024px)  { 
+nav .collapse {display: none;}
+#myCarousel .carousel-caption {
+  top: 0;
+}
+}
