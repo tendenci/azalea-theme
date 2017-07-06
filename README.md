@@ -8,10 +8,10 @@ To make changes from Tendenci's browser-based Theme Editor, you can copy and pas
 ## Creator
 This template was created by Tendenci.com
 
-twitter.com/tendenci
-facebook.com/tendenci
-youtube.com/tendencicms
-github.com/tendenci
+[Twitter](https://twitter.com/tendenci)
+[Facebook](https://facebook.com/tendenci)
+[YouTube](https://youtube.com/tendencicms)
+[Github](https://github.com/tendenci)
 
 ## Bugs and Issues
 Having an issue with this template?  Please submit here on Github or leave a comment.
