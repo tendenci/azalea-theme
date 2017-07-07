@@ -23,14 +23,12 @@ The Azalea theme does utilize a few boxes to provide editable content particular
 * Box 04 - Footer
 
 ## Creator
-This template was created by Tendenci.com
+This template was created by [Tendenci](https://tendenci.com)!
 
 * [Twitter](https://twitter.com/tendenci)
 * [Facebook](https://facebook.com/tendenci)
 * [YouTube](https://youtube.com/tendencicms)
 * [Github](https://github.com/tendenci)
-
-![Tendenci](media/img/tendencilogoteal.png "Tendenci Logo")
 
 ## Bugs and Issues
 Having an issue with this template?  Please submit here on [Tendenci's Github](https://github.com/tendenci/tendenci/issues).
