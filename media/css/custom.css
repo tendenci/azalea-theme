@@ -32,6 +32,14 @@
 *
 */
 
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+}
 
 h1 {
   font-size: 50px;
@@ -84,12 +92,6 @@ hr.wide {
   border-radius: 0;
   margin-top: 30px;
   font-weight: normal;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
 .btn.btn-pop:hover {
   color: #585858;
@@ -102,6 +104,60 @@ hr.wide {
   transition-timing-function: ease-out;
 }
 
+.btn.btn-light {
+  color: white;
+  border-bottom: 1px white solid;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  border-radius: 0;
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+button.btn.btn-primary:focus {
+  outline:none;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 0;
+  color: #404041;
+  border-bottom: 1px solid #404041;
+  padding-bottom: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary,
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary,
+.btn:focus, .btn:active:focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn.active.focus {
+  color: #e96f5c;
+  border-bottom: 1px #e96f5c solid;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; 
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
 
 
 /* ====================================================================
@@ -111,7 +167,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('../media/img/azalea-memberships.jpeg');
+    url('/themes/azalea-theme/media/img/azalea-memberships.jpeg');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -121,7 +177,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('../media/img/azalea-events.png');
+    url('/themes/azalea-theme/media/img/azalea-events.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -131,7 +187,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('../media/img/azalea-memberships.jpeg');
+    url('/themes/azalea-theme/media/img/azalea-memberships.jpeg');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -141,7 +197,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('../media/img/azalea-jobs.png');
+    url('/themes/azalea-theme/media/img/azalea-jobs.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -151,7 +207,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('../media/img/azalea-about-us.png');
+    url('/themes/azalea-theme/media/img/azalea-about-us.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -160,7 +216,7 @@ hr.wide {
 #homepage-image {
   background:
     linear-gradient(to left, rgba(237,104,60,.9), rgba(0,0,0,.9)),
-    url('../media/img/azalea-home-1.jpg');
+    url('/themes/azalea-theme/media/img/azalea-home-1.jpg');
   height:650px;
   background-blend-mode: screen, screen;
   width:100%;
@@ -171,7 +227,7 @@ hr.wide {
 #homepage-newletter-image {
   background:
     linear-gradient(to left, rgba(237,104,60,1), rgba(0,0,0,1)),
-    url('../media/img/azalea-home-2.jpg');
+    url('/themes/azalea-theme/media/img/azalea-home-2.jpg');
   /*  height:550px; */
   background-blend-mode: screen, screen;
   width:100%;
@@ -521,12 +577,6 @@ to {opacity: 1;}
   padding-top: 250px;
   color: white;
 }
-.homepage-image-text a{
-  color:white;
-  border-bottom: 1px white solid;
-  padding-bottom: 5px;
-  margin-top:20px;
-}
 .homepage-image-text h3 {
   padding-top: 20px;
 }
@@ -573,28 +623,9 @@ section#homepage-events {
   padding: 0 10px 20px 10px;
   margin:0;
 }
-.view-more-events h4>a {
-  color: #404041;
-  border-bottom: 1px solid #404041;
-  padding-bottom: 5px;
-}
 .view-more-events {
   padding:30px 0 20px 0;
 }
-
-.homepage-image-text a:hover,
-#homepage-events .view-more-events a:hover,
-.learn-more-about h4>a:hover {
-  color: #e96f5c;
-  border-bottom: 1px #e96f5c solid;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  transition-timing-function: ease-out; 
-}
-
 
 /* ====================================================================
 ======================================================================= HOMEPAGE ABOUT */
@@ -667,6 +698,12 @@ section#about-us {
 }
 #bg-dark-inner:hover {
   opacity:.8;
+}
+.modal-dialog {
+  z-index: 10000;
+}
+.learn-more-about {
+  margin-bottom: 50px;
 }
 
 /* ====================================================================
@@ -903,9 +940,6 @@ article {
 }
 #t-pages-page-2 ul.list-unstyled.t-meta-data {
   display: none;
-}
-button.btn.btn-primary:focus {
-  outline:none;
 }
 form#t-corp-form,
 form#t-memberships-application-form {
