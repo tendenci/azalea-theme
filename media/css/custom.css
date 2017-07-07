@@ -111,7 +111,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('/themes/azalea-theme/media/img/azalea-memberships.jpeg');
+    url('../media/img/azalea-memberships.jpeg');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -121,7 +121,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('/themes/azalea-theme/media/img/azalea-events.png');
+    url('../media/img/azalea-events.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -131,7 +131,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('/themes/azalea-theme/media/img/azalea-memberships.jpeg');
+    url('../media/img/azalea-memberships.jpeg');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -141,7 +141,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('/themes/azalea-theme/media/img/azalea-jobs.png');
+    url('../media/img/azalea-jobs.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -151,7 +151,7 @@ hr.wide {
   height: 550px;
   background: 
     linear-gradient(to left, rgba(237,104,60,.3), rgba(0,0,0,.3)), 
-    url('/themes/azalea-theme/media/img/azalea-about-us.png');
+    url('../media/img/azalea-about-us.png');
   background-size: cover;
   margin-top: -150px;
   z-index: -1000;
@@ -160,7 +160,7 @@ hr.wide {
 #homepage-image {
   background:
     linear-gradient(to left, rgba(237,104,60,.9), rgba(0,0,0,.9)),
-    url('/themes/azalea-theme/media/img/azalea-home-1.jpg');
+    url('../media/img/azalea-home-1.jpg');
   height:650px;
   background-blend-mode: screen, screen;
   width:100%;
@@ -171,7 +171,7 @@ hr.wide {
 #homepage-newletter-image {
   background:
     linear-gradient(to left, rgba(237,104,60,1), rgba(0,0,0,1)),
-    url('/themes/azalea-theme/media/img/azalea-home-2.jpg');
+    url('../media/img/azalea-home-2.jpg');
   /*  height:550px; */
   background-blend-mode: screen, screen;
   width:100%;
