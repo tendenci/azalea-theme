@@ -10,8 +10,9 @@
         "creator": null,
         "allow_member_view": false,
         "entity": 1,
-        "content": "<p><a href=\"/\"><img class=\"img-responsive\" title=\"Welcome to Tendenci's Twenty Thirteen Temlate Demo!\" src=\"/themes/twenty-thirteen/media/images/logo.png\" alt=\"Tendenci Twenty Thirteen Logo\" /></a></p>",
-        "tags": "tendencidemo",
+        "content": "<p><a href=\"/\"><img class=\"img-responsive\" title=\"Welcome to Tendenci's Azalea Theme!\" src=\"../../../media/img/azalea-logo-dark.png\" alt=\"Azalea Logotype\" width=\"150\" height=\"53\" /></a></p>
+",
+        "tags": "azalea-demo",
         "title": "Header-Logo",
         "owner_username": "system_generated",
         "owner": 1,
@@ -35,7 +36,9 @@
         "creator": null,
         "allow_member_view": false,
         "entity": 1,
-        "content": "<p><a href=\"/donations/\">Support the Cause &raquo;</a></p>",
+        "content": "<p>We made the Azalea template for our clients who are looking for a template that looks great and has the same functionality that is built into the Tendenci platform.</p>
+<p>Tendenci is an all in one software for managing non-profits and associations. This platform does everything from high security membership management to automatically generating Newsletters from recent content you&rsquo;ve posted on your website. Want to learn more about Tendenci?</p>
+",
         "tags": "tendencidemo",
         "title": "Header-Support Button",
         "owner_username": "system_generated",
