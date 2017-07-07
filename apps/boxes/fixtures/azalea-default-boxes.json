@@ -1,0 +1,102 @@
+[
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2012-12-20T09:36:14.168",
+        "group": 1,
+        "update_dt": "2016-06-16T12:26:40.976",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": null,
+        "allow_member_view": false,
+        "entity": 1,
+        "content": "<p><a href=\"/\"><img class=\"img-responsive\" title=\"Welcome to Tendenci's Twenty Thirteen Temlate Demo!\" src=\"/themes/twenty-thirteen/media/images/logo.png\" alt=\"Tendenci Twenty Thirteen Logo\" /></a></p>",
+        "tags": "tendencidemo",
+        "title": "Header-Logo",
+        "owner_username": "system_generated",
+        "owner": 1,
+        "position": 0,
+        "status_detail": "active",
+        "creator_username": "system_generated",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "boxes.box",
+    "pk": 1
+},
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2012-12-20T14:57:23.135",
+        "group": 1,
+        "update_dt": "2015-08-24T15:45:50.285",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": null,
+        "allow_member_view": false,
+        "entity": 1,
+        "content": "<p><a href=\"/donations/\">Support the Cause &raquo;</a></p>",
+        "tags": "tendencidemo",
+        "title": "Header-Support Button",
+        "owner_username": "system_generated",
+        "owner": null,
+        "position": 0,
+        "status_detail": "active",
+        "creator_username": "system_generated",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "boxes.box",
+    "pk": 2
+},
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2012-12-20T16:17:28.410",
+        "group": 1,
+        "update_dt": "2015-08-24T15:45:50.259",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": null,
+        "allow_member_view": false,
+        "entity": 1,
+        "content": "<p><a href=\"/membership-benefits/\"><img title=\"header-join.png\" src=\"/files/17/\" alt=\"header-join.png\" width=\"53\" height=\"22\" /></a><a href=\"/login/\"><img title=\"header-login.png\" src=\"/files/18/\" alt=\"header-login.png\" width=\"53\" height=\"22\" /></a><a href=\"/\" target=\"_blank\"><img title=\"header-twitter.png\" src=\"/files/9/\" alt=\"header-twitter.png\" width=\"23\" height=\"22\" /></a><a href=\"/\" target=\"_blank\"><img title=\"header-flickr.png\" src=\"/files/7/\" alt=\"header-flickr.png\" width=\"23\" height=\"22\" /></a><a href=\"/\" target=\"_blank\"><img title=\"header-facebook.png\" src=\"/files/6/\" alt=\"header-facebook.png\" width=\"23\" height=\"22\" /></a><a href=\"/\" target=\"_blank\"><img title=\"header-rss.png\" src=\"/files/14/\" alt=\"header-rss.png\" width=\"23\" height=\"22\" /></a></p>",
+        "tags": "tendencidemo",
+        "title": "Header Links",
+        "owner_username": "system_generated",
+        "owner": null,
+        "position": 0,
+        "status_detail": "active",
+        "creator_username": "system_generated",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "boxes.box",
+    "pk": 3
+},
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2012-12-27T09:08:30.522",
+        "group": 1,
+        "update_dt": "2015-10-11T00:51:34.337",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": null,
+        "allow_member_view": false,
+        "entity": 1,
+        "content": "<h3>What We Do</h3>\r\n<p><img class=\"img-responsive\" style=\"display: block; margin-left: auto; margin-right: auto;\" title=\"What We Do\" src=\"/themes/twenty-thirteen/media/images/box-1.jpg\" alt=\"Twenty-Thirteen Theme | What We Do\" width=\"315\" height=\"150\" /></p>\r\n<p>Our Association is a 501(c)3 nonprofit that serves to futher our mission of making the world a better place through our programs and events. Each year, we put on programs such as events and educational workshops, and provide online content to further our cause.</p>\r\n<p><a class=\"readmore\" href=\"/about/\">More About What We Do &raquo;</a></p>",
+        "tags": "tendencidemo",
+        "title": "What We Do",
+        "owner_username": "system_generated",
+        "owner": 1,
+        "position": 0,
+        "status_detail": "active",
+        "creator_username": "system_generated",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "boxes.box",
+    "pk": 4
+}
+]
