@@ -22,6 +22,13 @@ The Azalea theme does utilize a few boxes to provide editable content particular
 * Box 03 - Homepage About Us Image (Left)
 * Box 04 - Footer
 
+## Fonts
+The fonts in this theme are:
+* 'Amiri', serif
+* 'Nunito Sans', sans-serif
+
+They are integrated into base.html using Google Fonts CDN.  If you'd like to host the fonts yourself, you can by downloading them at [Google Fonts](https://fonts.google.com).
+
 ## Creator
 This template was created by [Tendenci](https://tendenci.com)!
 
@@ -35,3 +42,6 @@ Having an issue with this template?  Please submit here on [Tendenci's Github](h
 
 ## Copyright and License
 Copyright Tendenci — The Open Source AMS, 2017 under the GPU license.
+
+Images are from [Pexels](https://pexels.com) under CC0.
+Fonts are from [Google Fonts](https//fonts.google.com).
