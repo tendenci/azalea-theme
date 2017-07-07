@@ -15,7 +15,7 @@ Azalea has a large, graphic header in each of the modules which relies on a defa
 The custom.css file contains the styling information for this theme.  Be sure to include this css in your updates.
 
 ## Boxes Content
-The Azalea theme does utilize a few boxes to provide editable content particularly in the header and footer.  Check out the Boxes folder for this content to get you started!
+The Azalea theme does utilize a few boxes to provide editable content particularly in the header and footer.  You can check out the Boxes folder for this content to get started manually!  Or you can use our boxes fixtures located in the apps folder!
 
 * Box 01 - Header Logo
 * Box 02 - Homepage About Us Text (Right)
