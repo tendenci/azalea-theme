@@ -22,6 +22,8 @@
     {% autopaginate jobs 10 %}
     {% job_search %}
 
+    <br />
+
     <h4 class="capitalize">
         {% if MODULE_JOBS_LABEL_PLURAL %}
             <em>{% blocktrans with label_plural=MODULE_JOBS_LABEL_PLURAL count=paginator.count %}
