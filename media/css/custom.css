@@ -36,7 +36,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-p {
+p, li, .p, .li {
   font-family: 'Amiri', serif;
   font-size: 18px;
 }
@@ -228,10 +228,11 @@ button.btn.btn-primary:focus {
   background:
     linear-gradient(to left, rgba(237,104,60,1), rgba(0,0,0,1)),
     url('/themes/azalea-theme/media/img/azalea-home-2.jpg');
-  /*  height:550px; */
   background-blend-mode: screen, screen;
   width:100%;
   background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* ====================================================================
@@ -273,6 +274,9 @@ form#t-accounts-login-form {
 /*navbar*/
 #t-navbar {
   margin: 0;
+}
+.t-main-navbar-nav li {
+  font-family: 'Nunito Sans', sans-serif;
 }
 /* #sub #t-navbar targets interior pages only */
 #sub #t-navbar {
