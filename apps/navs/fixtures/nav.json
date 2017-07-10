@@ -1,0 +1,183 @@
+[
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2012-04-05T15:57:43",
+        "megamenu": false,
+        "description": "The main navigation that is initially created.",
+        "update_dt": "2017-01-28T01:03:36.485",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": 1,
+        "allow_member_view": false,
+        "entity": 1,
+        "owner_username": "",
+        "owner": 1,
+        "title": "Main Navigation",
+        "status_detail": "active",
+        "creator_username": "",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "navs.nav",
+    "pk": 1
+},
+{
+    "fields": {
+        "status": true,
+        "create_dt": "2016-01-08T15:32:46.562",
+        "megamenu": false,
+        "description": "",
+        "update_dt": "2017-02-06T18:55:35.402",
+        "allow_user_edit": false,
+        "allow_user_view": false,
+        "creator": 1,
+        "allow_member_view": false,
+        "entity": 1,
+        "owner_username": "",
+        "owner": 1,
+        "title": "Utility Nav",
+        "status_detail": "active",
+        "creator_username": "",
+        "allow_member_edit": false,
+        "allow_anonymous_view": true
+    },
+    "model": "navs.nav",
+    "pk": 2
+},
+{
+    "fields": {
+        "title": "About Us",
+        "url": "/events/search/",
+        "level": 0,
+        "label": "Events",
+        "new_window": false,
+        "nav": 1,
+        "position": 5,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 7
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/membership-benefits/",
+        "level": 0,
+        "label": "Membership",
+        "new_window": false,
+        "nav": 1,
+        "position": 1,
+        "page": 2,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 14
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/mission-vision/",
+        "level": 0,
+        "label": "About Us",
+        "new_window": false,
+        "nav": 1,
+        "position": 7,
+        "page": 3,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 37
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/jobs/",
+        "level": 0,
+        "label": "Jobs",
+        "new_window": false,
+        "nav": 1,
+        "position": 12,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 42
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/login/",
+        "level": 0,
+        "label": "Login",
+        "new_window": false,
+        "nav": 2,
+        "position": 1,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 54
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/news/",
+        "level": 0,
+        "label": "News",
+        "new_window": false,
+        "nav": 1,
+        "position": 14,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 57
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/forms/contact-us/",
+        "level": 0,
+        "label": "Contact",
+        "new_window": false,
+        "nav": 2,
+        "position": 2,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 58
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/forms/subscribe/",
+        "level": 0,
+        "label": "Newsletter",
+        "new_window": false,
+        "nav": 2,
+        "position": 3,
+        "page": null,
+        "css": ""
+    },
+    "model": "navs.navitem",
+    "pk": 59
+},
+{
+    "fields": {
+        "title": "",
+        "url": "/search/",
+        "level": 0,
+        "label": " ",
+        "new_window": false,
+        "nav": 2,
+        "position": 4,
+        "page": null,
+        "css": "fa fa-search fa-lg"
+    },
+    "model": "navs.navitem",
+    "pk": 60
+}
+]
