@@ -8,7 +8,15 @@ If your running Tendenci on your own local machine, feel free to clone or fork t
 To make changes from Tendenci's browser-based Theme Editor, you can copy and paste templates.  Please note that css changes currently on your site may affect the css in this template.
 
 ## Theme Structure
-This theme includes templates in accounts, events, news, forms, and jobs.  For more modern updates to other modules, check out the [Willow Theme](https://github.com/tendenci/tendenci-base-theme).
+This theme includes templates in only the following modules:
+* Events
+* News
+* Forms
+* Jobs
+* Articles
+* Accounts Login
+
+Check out the [Willow Theme](https://github.com/tendenci/tendenci-base-theme) for a more comprehensive template set!
 
 Azalea has a large, graphic header in each of the modules which relies on a default template.  In order to make an update, please be sure to include the default-xxx.html template as well as the template in the associated module folder.  Why did we do it this way?  The image from that default template can be carried throughout the module.
 
@@ -21,6 +29,8 @@ The Azalea theme does utilize a few boxes to provide editable content particular
 * Box 02 - Homepage About Us Text (Right)
 * Box 03 - Homepage About Us Image (Left)
 * Box 04 - Footer
+
+Note: The content of the boxes will show up in your theme editor, they are benign, you can delete them if you choose.  They are included for those who don't want to use or have trouble using fixtures to migrate the boxes data. 
 
 ## Fonts
 The fonts in this theme are:
