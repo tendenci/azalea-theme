@@ -1,4 +1,4 @@
-# azalea-theme
+# Azalea Theme
 This repository includes the necessary html templates and css that were used in the Azalea Theme.
 
 ![Azalea](media/img/azalea-home-3.png "The Azalea Theme is responsive.")
